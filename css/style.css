@@ -3082,13 +3082,22 @@ padding: 60px 0;
     }
 }
 
-/* Mobile video sizing */
+/* Responsive video sizing */
 video {
     display: block;
     width: 100%;
-    max-width: 100%;
+    max-width: 640px;
     height: auto;
     object-fit: contain;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
