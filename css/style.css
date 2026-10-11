@@ -3082,6 +3082,15 @@ padding: 60px 0;
     }
 }
 
+/* Mobile video sizing */
+video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 
 
