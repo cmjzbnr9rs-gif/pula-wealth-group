@@ -2823,7 +2823,7 @@ margin-top: 50px;
 overflow: hidden;
 border-radius: 12px;
 background: #e9e6dc;
-aspect-ratio: auto;
+aspect-ratio: 4 / 3;
 box-shadow: 0 15px 35px rgba(16, 40, 32, 0.10);
 }
 
@@ -2885,14 +2885,8 @@ transition: transform 0.5s ease;
 .about-launch-grid .about-launch-image img {
     display: block;
     width: 100%;
-    height: 100%;
+    min-width: 100%;
     max-width: none;
-    object-fit: cover;
-    object-position: center;
-}
-
-.about-launch-grid .about-launch-image img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -3121,6 +3115,189 @@ video {
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+}
+
+/* Crypto Advisory Image */
+.crypto-advisory-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Livestock partnership video */
+.livestock-video {
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0;
+    min-width: 0;
+}
+.livestock-video video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+    background: #000;
+}
+.livestock-video .photo-caption {
+    margin-top: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+    .livestock-video {
+        margin: 18px 0;
+    }
+    .livestock-video video {
+        border-radius: 8px;
+    }
+}
+
+/* Energy project video */
+.energy-project-video {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 20px 0;
+}
+.energy-project-video video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background: #000;
+}
+.energy-project-video .photo-caption {
+    margin-top: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+    .energy-project-video {
+        margin: 16px 0;
+    }
+    .energy-project-video video {
+        border-radius: 8px;
+    }
+}
+
+/* Strategic Relationships - Leadership Photo */
+.about-leadership {
+    padding: 70px 0;
+}
+.about-leadership-figure {
+    width: 100%;
+    max-width: 900px;
+    margin: 35px auto 0;
+}
+.about-leadership-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+.about-leadership-figure figcaption {
+    margin-top: 14px;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+    .about-leadership {
+        padding: 45px 0;
+    }
+    .about-leadership-figure {
+        margin-top: 24px;
+    }
+    .about-leadership-figure img {
+        border-radius: 9px;
+    }
+    .about-leadership-figure figcaption {
+        font-size: 0.88rem;
+        text-align: left;
+    }
+}
+
+/* Leadership and regional engagement video */
+.about-leadership-video {
+    width: 100%;
+    max-width: 900px;
+    min-width: 0;
+    margin: 35px auto 0;
+}
+
+.about-leadership-video video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    background: #000;
+}
+
+.about-leadership-video .photo-caption {
+    margin-top: 14px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .about-leadership-video {
+        margin-top: 24px;
+    }
+
+    .about-leadership-video video {
+        border-radius: 9px;
+    }
+}
+
+/* Energy news and media coverage */
+.energy-news-section {
+    padding: 70px 0;
+}
+
+.energy-news-video {
+    width: 100%;
+    max-width: 900px;
+    min-width: 0;
+    margin: 35px auto 0;
+}
+
+.energy-news-video video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    background: #000;
+}
+
+.energy-news-video .photo-caption {
+    margin-top: 14px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .energy-news-section {
+        padding: 45px 0;
+    }
+
+    .energy-news-video {
+        margin-top: 24px;
+    }
+
+    .energy-news-video video {
+        border-radius: 9px;
     }
 }
 
